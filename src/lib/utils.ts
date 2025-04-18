@@ -2,7 +2,7 @@ import { generateBubbleSortAnimationArray } from "../algorithms/bubbleSort";
 import { generateInsertionSortAnimationArray } from "../algorithms/insertionSort";
 import { generateMergeSortAnimationArray } from "../algorithms/mergeSort";
 import { generateQuickSortAnimationArray } from "../algorithms/quickSort";
-import { generateSelectionSortAnimationArray } from "../algorithms/SelectionSort";
+import { generateSelectionSortAnimationArray } from "../algorithms/selectionSort";
 import { SortingAlgorithmType } from "./types";
 
 export function generateRandomNumberFromInterval(min: number, max: number) {
