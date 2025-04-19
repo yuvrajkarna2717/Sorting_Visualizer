@@ -1,50 +1,36 @@
-# React + TypeScript + Vite
+# Sorting Visualizer 🌀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive visual tool to learn and explore sorting algorithms like **Quick Sort**, **Merge Sort**, **Bubble Sort**, and more — powered by **React**, **TypeScript**, and **Vite**.
 
-Currently, two official plugins are available:
+![Sorting Visualizer Preview](https://sorting-visualizer-rp5w.onrender.com/preview.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- Visualize popular sorting algorithms in real-time
+- Beautiful animated transitions and color-coded states
+- Responsive design with a stunning UI using TailwindCSS
+- Algorithm statistics (e.g., total runs, elements sorted, most used)
+- Built with Vite for fast development experience
+- SEO-optimized meta tags and Open Graph sharing
+- GitHub and LinkedIn links included
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🚀 Live Demo
 
-- Configure the top-level `parserOptions` property like this:
+👉 [Live App](https://sorting-visualizer-rp5w.onrender.com/)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 📦 Tech Stack
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- ⚛️ React 18
+- ⛓ TypeScript
+- ⚡ Vite
+- 💅 TailwindCSS
+- 📊 Custom Stats API with Node.js + Express
+- 🔍 SEO-ready with meta tags and OG images
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 🛠️ Getting Started
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/sorting-visualizer.git
+cd sorting-visualizer
