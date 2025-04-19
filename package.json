@@ -19,6 +19,11 @@
     "javascript sorting",
     "visualizer"
   ],
+  "browserslist": [
+    ">0.5%",
+    "last 2 versions",
+    "not dead"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
