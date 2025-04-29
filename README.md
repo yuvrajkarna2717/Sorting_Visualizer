@@ -2,7 +2,7 @@
 
 An interactive visual tool to learn and explore sorting algorithms like **Quick Sort**, **Merge Sort**, **Bubble Sort**, and more — powered by **React**, **TypeScript**, and **Vite**.
 
-![Sorting Visualizer Preview](https://sorting-visualizer-rp5w.onrender.com/preview.png)
+![Sorting Visualizer Preview](https://sorting-visualizer-ten-delta.vercel.app/preview.png)
 
 ## ✨ Features
 
@@ -16,7 +16,7 @@ An interactive visual tool to learn and explore sorting algorithms like **Quick 
 
 ## 🚀 Live Demo
 
-👉 [Live App](https://sorting-visualizer-rp5w.onrender.com/)
+👉 [Live App](https://sorting-visualizer-ten-delta.vercel.app/)
 
 ## 📦 Tech Stack
 
