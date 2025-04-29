@@ -11,6 +11,11 @@ import {
 import { FaPlayCircle } from "react-icons/fa";
 import { RxReset } from "react-icons/rx";
 
+interface UpdateStatsPayload {
+  elementsSorted: number;
+  algorithmRun: string;
+}
+
 export default function Home() {
   const {
     arrayToSort,
@@ -28,7 +33,42 @@ export default function Home() {
     setSelectedAlgorithm(e.target.value as SortingAlgorithmType);
   };
 
+  const updateStats = async (
+    newElementsSorted: number,
+    algorithmRun: string
+  ) => {
+    const payload: UpdateStatsPayload = {
+      elementsSorted: newElementsSorted,
+      algorithmRun,
+    };
+
+    try {
+      const response = await fetch(
+        "https://sorting-visualizer-backend.onrender.com/api/stats",
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Failed to update stats");
+      }
+
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error("Error updating stats:", error);
+      throw error;
+    }
+  };
+
   const handlePlay = () => {
+    updateStats(arrayToSort.length, selectedAlgorithm);
+
     if (requiresReset) {
       resetArrayAndAnimation();
       return;
@@ -45,7 +85,7 @@ export default function Home() {
   // on mount array animation should be reset
   useEffect(() => {
     resetArrayAndAnimation();
-  }, [])
+  }, []);
 
   return (
     <main className="absolute top-0 h-screen w-screen z-[-2] bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#150229_1px)] bg-[size:40px_40px]">
