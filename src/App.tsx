@@ -97,7 +97,7 @@ export default function App() {
         </section>
 
         {/* Stats Section */}
-        {data?.algorithmCount !== 0 && (
+        {data?.algorithmCount !== 0 ? (
           <section className="py-10 px-6">
             <h2 className="text-3xl font-bold text-center mb-12">
               Project Stats
@@ -123,6 +123,8 @@ export default function App() {
               </div>
             </div>
           </section>
+        ) : (
+          <div className="md:mt-[284px]"></div>
         )}
 
         {/* Footer */}
