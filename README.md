@@ -35,10 +35,7 @@ An interactive visual tool to learn and explore sorting algorithms like **Quick 
 git clone https://github.com/your-username/sorting-visualizer.git
 cd sorting-visualizer
 
-
 ```
-
-Absolutely 🔥 — here’s the **extended README** continuation after your `git clone` section, detailing setup, running, and contributing steps 👇
 
 ---
 
